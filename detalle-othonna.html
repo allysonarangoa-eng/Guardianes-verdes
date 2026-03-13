@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Mágico: Collar de Rubíes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quicksand', sans-serif; }
+        h1, h2 { font-family: 'Fredoka', sans-serif; }
+        .bg-ruby {
+            background: radial-gradient(circle at top right, #fdf2f8, #f5f3ff, #ffffff);
+        }
+        .burbuja {
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+        }
+        .burbuja:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-ruby min-h-screen p-4 md:p-8">
+
+    <header class="max-w-3xl mx-auto text-center mb-10">
+        <div class="inline-block bg-fuchsia-200 px-6 py-2 rounded-full shadow-sm rotate-2 mb-4">
+            <span class="font-bold text-fuchsia-900 text-sm tracking-widest uppercase">✨ Misión Rubí ✨</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-rose-700 mb-2">¡El Collar de Rubíes!</h1>
+        <p class="text-rose-900 font-medium">La planta que cambia de color con el sol 💎</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="burbuja bg-white p-8 shadow-xl border-b-8 border-rose-500">
+            <div class="text-4xl mb-4">🇿🇦</div>
+            <h2 class="text-2xl font-bold text-rose-600 mb-4">¿Quién es ella?</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Se llama <strong>Othonna capensis</strong> y también vive en Sudáfrica. Sus hojitas parecen pepinos pequeñitos o gotas de agua que cuelgan de tallos de color morado. ¡Es muy elegante!
+            </p>
+        </div>
+
+        <div class="burbuja bg-purple-600 p-8 shadow-xl text-white border-b-8 border-purple-800">
+            <div class="text-4xl mb-4">🎨</div>
+            <h2 class="text-2xl font-bold mb-4">¡Poder Camaleón!</h2>
+            <p class="leading-relaxed mb-4">
+                ¡Esta planta hace magia! Si recibe mucho sol, sus hojitas cambian de color verde a un <strong>púrpura brillante</strong> muy hermoso.
+            </p>
+            <div class="bg-purple-500 p-3 rounded-xl text-sm italic">
+                Dato: ¡Sus flores son de color amarillo brillante, como pequeñas estrellas! 🌟
+            </div>
+        </div>
+
+        <div class="burbuja bg-rose-50 p-8 shadow-xl md:col-span-2 border-b-8 border-rose-300">
+            <h2 class="text-2xl font-bold text-rose-700 mb-6 flex items-center gap-3">
+                <span class="text-4xl">👑</span> ¿Cómo tratarla como a una reina?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-2xl shadow-sm text-center">
+                    <p class="font-bold text-rose-600 mb-2">☀️ Mucho Sol</p>
+                    <p class="text-sm text-gray-500">A ella le encanta el sol directo para ponerse de color morado.</p>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm text-center">
+                    <p class="font-bold text-rose-600 mb-2">💧 Poca Agua</p>
+                    <p class="text-sm text-gray-500">Solo dale agua cuando veas que sus hojitas se ponen un poquito arrugadas.</p>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm text-center">
+                    <p class="font-bold text-rose-600 mb-2">🪴 Espacio</p>
+                    <p class="text-sm text-gray-500">Le encanta estar en macetas colgantes para que sus hilos caigan hacia abajo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="burbuja bg-amber-100 p-8 shadow-xl md:col-span-2 flex flex-col md:flex-row items-center gap-6 border-b-8 border-amber-400">
+            <div class="text-6xl">⚠️</div>
+            <div>
+                <h2 class="text-2xl font-bold text-amber-700 mb-2">¡Cuidado, explorador!</h2>
+                <p class="text-amber-900">
+                    Al igual que el Rosario, esta planta <strong>no es comida</strong>. Es solo para decorar y para que nuestro jardín se vea increíble. ¡Lávate las manos después de tocarla!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center mt-12 mb-8">
+        <a href="index.html" class="bg-rose-600 text-white px-8 py-3 rounded-full font-bold hover:bg-rose-700 transition-all shadow-lg inline-block mb-8">
+            ⬅️ Volver a mis plantas
+        </a>
+
+        <div class="max-w-2xl mx-auto pt-8 border-t border-rose-200">
+            <p class="text-rose-400 text-xs font-bold uppercase tracking-widest mb-4">Equipo de Exploración:</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 text-rose-800 text-[10px] md:text-xs font-medium">
+                <span>Allyson Arango Acevedo</span>
+                <span>Yarley Eliana Valderrama</span>
+                <span>Karoll Margarita Morales</span>
+                <span>María Isabel Velásquez</span>
+                <span>Ana Sofía Cardona</span>
+                <span>Evelyn Mariana Chavarría</span>
+                <span>Isamar Roció Valencia</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

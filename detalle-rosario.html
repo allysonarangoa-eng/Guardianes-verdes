@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Mágico: Planta Rosario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quicksand', sans-serif; }
+        h1, h2 { font-family: 'Fredoka', sans-serif; }
+        .bg-magic {
+            background: radial-gradient(circle at top right, #ecfdf5, #f0fdf4, #ffffff);
+        }
+        .burbuja {
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+        }
+        .burbuja:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-magic min-h-screen p-4 md:p-8">
+
+    <header class="max-w-3xl mx-auto text-center mb-10">
+        <div class="inline-block bg-yellow-300 px-6 py-2 rounded-full shadow-sm rotate-2 mb-4">
+            <span class="font-bold text-yellow-900 text-sm tracking-widest uppercase">✨ Expedición Botánica ✨</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-emerald-700 mb-2">¡La Planta de los Deseos!</h1>
+        <p class="text-emerald-900 font-medium">Conoce a la increíble Planta Rosario 🌿</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="burbuja bg-white p-8 shadow-xl border-b-8 border-emerald-500">
+            <div class="text-4xl mb-4">🌍</div>
+            <h2 class="text-2xl font-bold text-emerald-600 mb-4">¿De dónde viene?</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Nuestra amiga viene desde muy lejos, de los desiertos de <strong>Sudáfrica</strong>. Como allá hace mucho calor, ella aprendió a guardar agua en sus hojitas, ¡que parecen perlas de color verde brillante!
+            </p>
+        </div>
+
+        <div class="burbuja bg-emerald-600 p-8 shadow-xl text-white border-b-8 border-emerald-800">
+            <div class="text-4xl mb-4">🚀</div>
+            <h2 class="text-2xl font-bold mb-4">¡Superpoderes!</h2>
+            <ul class="space-y-4 text-emerald-50">
+                <li class="flex gap-3">
+                    <span>🪟</span>
+                    <p><strong>Ventanas de cristal:</strong> Cada bolita tiene una "ventanita" transparente para que el sol entre a jugar adentro de ella.</p>
+                </li>
+                <li class="flex gap-3">
+                    <span>🍪</span>
+                    <p><strong>Perfume secreto:</strong> Sus flores blancas huelen delicioso... ¡igualito a la canela!</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="burbuja bg-cyan-50 p-8 shadow-xl md:col-span-2 border-b-8 border-cyan-400">
+            <h2 class="text-2xl font-bold text-cyan-700 mb-6 flex items-center gap-3">
+                <span class="text-4xl">🧼</span> ¿Cómo cuidarla como un experto?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-2xl shadow-sm">
+                    <p class="font-bold text-cyan-600 mb-2">☀️ Luz del Sol</p>
+                    <p class="text-sm text-gray-500">Ponla cerca de una ventana, pero que el sol no le pegue muy fuerte porque se quema su carita.</p>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm">
+                    <p class="font-bold text-cyan-600 mb-2">💧 Gotitas de Agua</p>
+                    <p class="text-sm text-gray-500">Dale de beber solo cuando la tierra esté muy seca. Si hace calor, una vez a la semana está perfecto.</p>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm">
+                    <p class="font-bold text-cyan-600 mb-2">🧊 ¡Brrr, qué frío!</p>
+                    <p class="text-sm text-gray-500">A ella le encanta el clima templado (15-25°C). ¡No le gusta nada la nieve!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="burbuja bg-rose-100 p-8 shadow-xl md:col-span-2 flex flex-col md:flex-row items-center gap-6 border-b-8 border-rose-400">
+            <div class="text-6xl">🚫</div>
+            <div>
+                <h2 class="text-2xl font-bold text-rose-700 mb-2">¡Solo para ver, no para comer!</h2>
+                <p class="text-rose-900">
+                    Recuerda que estas "perlas" son mágicas pero <strong>tóxicas</strong>. No dejes que tus mascotas o hermanitos pequeños las muerdan, porque les puede doler la pancita o picar la piel. ¡Mejor disfrutemos verlas crecer hacia abajo!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center mt-12 mb-8">
+        <button onclick="window.history.back()" class="bg-emerald-600 text-white px-8 py-3 rounded-full font-bold hover:bg-emerald-700 transition-all shadow-lg inline-block mb-8">
+            ⬅️ Volver a mis plantas
+        </button>
+
+        <div class="max-w-2xl mx-auto pt-8 border-t border-emerald-200">
+            <p class="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-4">Equipo de Exploración:</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 text-emerald-800 text-[10px] md:text-xs font-medium">
+                <span>Allyson Arango Acevedo</span>
+                <span>Yarley Eliana Valderrama</span>
+                <span>Karoll Margarita Morales</span>
+                <span>María Isabel Velásquez</span>
+                <span>Ana Sofía Cardona</span>
+                <span>Evelyn Mariana Chavarría</span>
+                <span>Isamar Rocío Valencia</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
